@@ -1,4 +1,6 @@
 from extension_native_helpers import *
+Dtool_PreloadDLL("gamedata.gamedata")
+from gamedata.gamedata import *
 
 #SAMPLES
 ####################################################################
