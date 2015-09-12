@@ -1,2 +1,2 @@
-# TTILeak
-repo dedicated to leaking tti
+# TTIHacking
+repo dedicated to hacking/leaking tti
