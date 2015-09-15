@@ -85,6 +85,28 @@ extern "C"
 void init_libpandagl();
 void init_libOpenALAudio();
 
+#define DEBUGLIB(x) x ".lib"
+
+
+//These will be cleaned up later
+#pragma comment(lib, DEBUGLIB("unicodedata"))
+#pragma comment(lib, DEBUGLIB("libp3dtool"))
+#pragma comment(lib, DEBUGLIB("libp3dtoolconfig"))
+#pragma comment(lib, DEBUGLIB("libpandaexpress"))
+#pragma comment(lib, DEBUGLIB("libpanda"))
+#pragma comment(lib, DEBUGLIB("libpandaegg"))
+#pragma comment(lib, DEBUGLIB("libpandagl"))
+#pragma comment(lib, DEBUGLIB("libpandaphysics"))
+#pragma comment(lib, DEBUGLIB("libpandafx"))
+#pragma comment(lib, DEBUGLIB("libp3direct"))
+#pragma comment(lib, DEBUGLIB("libp3vision"))
+#pragma comment(lib, DEBUGLIB("libp3windisplay"))
+#pragma comment(lib, "C:\\p3dparty\\p3d32\\panda3d-1.9.0\\thirdparty\\win-libs-vc10\\nvidiacg\\lib\\cg.lib")
+#pragma comment(lib, "C:\\p3dparty\\p3d32\\panda3d-1.9.0\\thirdparty\\win-libs-vc10\\nvidiacg\\lib\\cgGL.lib")
+#pragma comment(lib, "C:\\p3dparty\\p3d32\\panda3d-1.9.0\\thirdparty\\win-libs-vc10\\openal\\lib\\OpenAL32.lib")
+#pragma comment(lib, DEBUGLIB("_socket"))
+#pragma comment(lib, DEBUGLIB("libpandaode"))
+
 //main
 int main(int argc, char* argv[])
 {
