@@ -1,0 +1,7 @@
+All names, item 16798
+ Address=1E03CDC0 python22
+ Section=.text
+ Type=Export
+ Name=PyImport_ImportFrozenModule
+
+ This is the module you have to set a breakpoint on. Only for Python22 in toontown.exe

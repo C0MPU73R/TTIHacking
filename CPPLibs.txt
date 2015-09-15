@@ -1,0 +1,14 @@
+libpandaexpress.lib
+libpanda.lib
+libpandaegg.lib
+libpandagl.lib
+libpandaphysics.lib
+libpandafx.lib 
+libp3direct.lib
+libp3vison.lib
+libpandaode.lib
+_socket.lib
+libp3dtoolconfig.lib
+unicodedata.lib
+python27.lib
+
