@@ -10,7 +10,6 @@
 #include <string>
 #include <cstdlib>
 #include <fstream>
-#include <openssl/evp.h>
 #include <vector>
 
 
@@ -150,7 +149,6 @@ int main(int argc, char* argv[])
 	PyImport_ImportFrozenModule("__config__");
 	initlibpandaexpress();
 	initlibpanda();
-	init_libpnmimagetypes();
 	initlibpandaegg();
 	init_libpandagl();
 	initlibpandaphysics();
