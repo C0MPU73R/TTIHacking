@@ -4,6 +4,13 @@
 // be sure to add panda and python LIBS
 
 //import python stuff
+#include "Python.h"
+#include "marshal.h"
+#include "iostream"
+#include "string"
+#include "cstdlib"
+#include "fstream"
+#include "vector"
 #include <Python.h>
 #include <marshal.h>
 #include <iostream>
@@ -60,6 +67,23 @@ class Reader
 			return m_buf+m_pos;
 		}
 };
+extern "C"
+{
+	void initlibp3dtoolconfig();
+	void initunicodedata();
+	void initlibpandaexpress();
+	void initlibpanda();
+	void initlibpandaegg();
+	void initlibpandaphysics();
+	void initlibpandafx();
+	void initlibp3direct();
+	void initlibp3vision();
+	void initlibp3skel();
+	void init_socket();
+	void initlibpandaode();
+}
+void init_libpandagl();
+void init_libOpenALAudio();
 
 //main
 int main(int argc, char* argv[])
