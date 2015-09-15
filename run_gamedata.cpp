@@ -71,12 +71,12 @@ int main(int argc, char* argv[])
 	//Py_VerboseFlag = 1;
 	
 	// read the gamedata finally after all that useless code XD
-	std::cout << "Reading game blob." << std::endl;
+	std::cout << "Reading GameData.pyd" << std::endl;
 	std::fstream gameBlob;
 	gameBlob.open("GameData.pyd", std::ios_base::in | std::ios_base::binary);
 	if(!gameBlob.is_open())
 	{
-		//TODO: ERROR string
+		std::cout << "gamedata isnt even in the same dir XD" << std::endl;
 		exit(1);
 	}
 	gameBlob.seekg(0, std::ios_base::end);
@@ -140,7 +140,7 @@ int main(int argc, char* argv[])
 	//set the frozen modules so python knows the modules
 	PyImport_FrozenModules = fzns;
 
-	std::cout << "Initializing python" << std::endl;
+	std::cout << "Creating GameData instance 20260821" << std::endl;
 	// this command is obvious i dont need this here XD
 	Py_Initialize();
 	initunicodedata();
@@ -158,7 +158,7 @@ int main(int argc, char* argv[])
 	initlibp3direct();
 	initlibp3vision();
 	initlibpandaode();
-	std::cout << "Starting game" << std::endl;
+	std::cout << "Loading the frozen modules" << std::endl;
 	//import main ANOTHER file that isnt even packed in *facepalm*
 	PyImport_ImportFrozenModule("__main__");
 	//print an error which isnt there bc its awesome code XD
